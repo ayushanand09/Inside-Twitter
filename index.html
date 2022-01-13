@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=;, initial-scale=1.0">
+    <title>InsideTwitter</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+        integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div id="name">
+            <div class="logo">
+                <img src="Itwitterlogo.png" alt="">
+                INSIDE TWITTER
+            </div>
+        </div>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+            <li id="home"><a href="index.html"><strong>Home</strong></a></li>
+            <li><a href="about.html"> About </a></li>
+            <li><a href="feedback.html"> Feedback </a></li>
+            <div class="closeMenu"><i class="fa fa-times"></i></div>
+        </ul>
+    </div>
+    <div id=time>
+        <span id="time"></span>
+    </div>
+    <div class="welcomePage">
+        <div id="welcome">
+            Welcome to Inside Twitter - A place where you can deep-dive into Twitter insights
+        </div>
+        <span class="gif-1">
+            <img src="https://c.tenor.com/Bbaf7jFc3ZEAAAAi/twitter-png.giff" alt="">
+        </span>
+        <br>
+        <div class="insideWelcome-1">
+            <h2>About Twitter</h2> <br>
+            <span>
+                Twitter is a social networking service on which users post and interact with messages known as "tweets".
+                Twitter's primary purpose is to connect its users and allow them to share their thoughts with their
+                followers and others through the use of hashtags. <br> <br>
+                Current CEO: Parag Agrawal</em>
+            </span>
+        </div>
+        <div class="insideWelcome-2">
+            <h2>About this page</h2> <br>
+            <span>
+                This page is about a twitter analysis of users having a valid account at twitter. It will be using
+                <strong>
+                    Fetch API</strong> to retrieve the data from a static JSON file. It will produce a non-dragable marker on
+                a world map. This world map is produced from mapbox.  <br> The more bluish colour on the marker indicates more
+                number of twitter users in that particular region.
+            </span>
+        </div>
+    </div>
+
+    <div class="map-page" id="map"></div>
+    <footer class="footer">
+        You can reach out at:
+        <div class="icon">
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-1.5x"></i></a>
+            <a href="https://www.instagram.com/_iamayushh/" target="_blank"><i class="fab fa-instagram fa-1.5x"></i></a>
+            <a href="https://www.linkedin.com/in/ayush-anand-238305204/" target="_blank"><i
+                    class="fab fa-linkedin fa-1.5x"></i></a>
+            <a href="https://github.com/ayushanand09" target="_blank"><i class="fab fa-github fa-1.5x"></i></a>
+        </div>
+        <div class="copyright">
+            Copyright 2022 &copy; | Inside Twitter | Ayush Anand
+        </div>
+    </footer>
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiYXl1c2gwOTA5IiwiYSI6ImNreWFneTlnMjA1ZTkzMG9kdDhwcTdmZjAifQ.PA1x347EqGh3JeFN6hAbbw';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/dark-v10',
+            zoom: 1,
+        });
+    </script>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>

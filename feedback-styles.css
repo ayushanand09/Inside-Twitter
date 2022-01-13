@@ -1,0 +1,585 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: url('https://thumbs.gfycat.com/RigidQuarrelsomeBlackbird-size_restricted.gif');
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.navbar{
+    background-color: black;
+    opacity: 0.8;
+    margin: 1rem;
+    border-radius: 1rem;
+    justify-content: space-between;
+    display: flex;
+}
+
+.navbar .logo img{
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    vertical-align: middle;
+}
+
+.navbar:hover{
+    transition: all 1s;
+    box-shadow: 10px 10px 5px rgb(36, 65, 133);
+}
+
+#name{
+    color: white;
+    font-size: 2.5rem;
+    margin: 1rem 5rem;
+}
+
+.navbar .mainMenu{
+    list-style: none;
+    display: flex;
+    color: #fff;
+    margin: 1rem 2rem;
+}
+
+.navbar .mainMenu li a{
+    font-family: 'Noto Serif', serif;
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li a:hover{
+    font-size: 1.65rem;
+    background-color: white;
+    color:black;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+#home{
+    height: 3.5rem;
+}
+
+#home:hover{
+    background-color: white;
+    transition: 0.5s;
+}
+
+.navbar .openMenu {
+    font-size: 2rem;
+    margin: 1rem;
+    display: none;
+    cursor: pointer;
+}
+
+.navbar .mainMenu .closeMenu,
+.icons i{
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+#time{
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: antiquewhite;
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+#quote{
+    margin: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: cornsilk;
+    text-decoration: underline;
+    margin: 1rem 0rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+.form-structure{
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto; 
+    margin-right: auto;   
+}
+
+.insideForm{
+    font-family: 'Rubik', sans-serif;
+    flex-wrap: wrap;
+    opacity: 0.8;
+    border-radius: 1rem;    
+    background-color: #ccccd1;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+.insideForm:hover{
+    transition: all 0.5s;
+    box-shadow: 0.5rem 0.5rem 1rem rgb(221, 139, 15);
+}
+
+.insideForm input{
+    font-family: 'Rubik', sans-serif;
+    z-index: -1;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    padding: 0rem 1.5rem;
+    margin: 0.5rem 0rem;
+}
+
+.insideForm input:hover{
+    background-color: rgb(21, 219, 203);
+    border:0.1rem solid black;
+    box-shadow: 0.1rem 0.1rem 0.1rem black;
+    transition: all 0.5s;
+    cursor:pointer;
+}
+.txtarea textarea{
+    font-size: 1.2rem;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.txtarea textarea:hover{
+    background-color: rgb(21, 219, 203);
+    border:0.1rem solid black;
+    box-shadow: 0.1rem 0.1rem 0.1rem black;
+    transition: all 0.5s;
+    cursor:pointer;
+}
+button{
+    font-family: 'Rubik', sans-serif;
+    width: 6rem;
+    height: 2rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gender option{
+    font-size: 1.2rem;
+}
+
+.btn-pos{
+    display: flex;
+    justify-content: center;
+}
+
+button:hover{
+    background-color: rgb(21, 219, 203);
+    transition: all 0.5s;
+    border:2px solid black;
+    font-weight: bold;
+    box-shadow: 0.1rem 0.1rem 0.1rem black;
+    cursor: pointer;
+}
+
+#btn1{
+    margin: 1rem 1.5rem;
+    border:2px solid black;
+    flex-wrap: wrap;   
+    font-weight: bold;
+}
+
+#btn2{
+    margin: 1rem 1.5rem;
+    flex-wrap: wrap;
+    border:2px solid black;
+    font-weight: bold;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 2.8rem;
+    font-size: 1.4rem;
+}
+
+.icon {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.3rem;
+}
+
+.icon i {
+    font-size: 1.7rem;
+    padding: 0rem 0.3rem;
+    border:1px solid rgb(65, 65, 65);
+    border-radius: 0.6rem;
+    color: white;
+    cursor: pointer;
+    margin: 0.1rem;
+}
+
+.icon i:hover {
+    border:0.1rem solid rgb(143, 142, 142);
+    transition: all 0.5s;
+    color: rgb(143, 142, 142);
+}
+
+.copyright{
+    display: flex;
+    color: turquoise;
+}
+
+@media(max-width: 1395px){
+    .navbar .mainMenu li a{
+        font-size: 1.4rem;
+    }
+    #name{
+        font-size: 2.4rem;
+    }
+    #quote{
+        font-size: 1.9rem;
+    }
+    .footer{
+        font-size: 1.3rem;
+    }
+    .icon i {
+        font-size: 1.6rem;
+    } 
+}
+
+@media(max-width: 1330px) and (min-width:1100px) {
+    .navbar .logo img{
+        height: 4rem;
+        width: 4rem;
+    }
+}
+
+@media(max-width: 1200px){
+    .navbar .mainMenu li a{
+        font-size: 1.3rem;
+    }
+    #name{
+        font-size: 2.3rem;
+    }
+    #quote{
+        font-size: 1.8rem;
+    }
+    #time{
+        font-size: 1.4rem;
+    }
+    .footer{
+        font-size: 1.2rem;
+    }
+    .icon i {
+        font-size: 1.5rem;
+    } 
+}
+
+@media(max-width: 1100px) {
+    .navbar .mainMenu {
+        min-height: 100vh;
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin-top:0rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: black;
+        transition: all 1s ease;
+    }
+
+    .navbar .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 1.1rem;
+        right: 1.1rem;
+    }
+
+    .navbar .openMenu {
+        color: white;
+        display:inline-block;
+        position: absolute;
+        top: 2rem;
+        right: 1.1rem;
+    }
+
+    .navbar .mainMenu li a:hover {
+        background: none;
+        color: rgb(255, 123, 0);
+        font-size: 1.6rem;
+    }
+    .insideForm{
+        font-size: 1.2rem;
+    }
+    .insideForm input{
+        font-size: 1.1rem;
+    }
+    .txtarea textarea{
+        font-size: 1.1rem;
+    }
+    button{
+        font-size: 0.9rem;
+    }
+    .form-structure{
+        z-index: -1;
+    }
+    .insideForm{
+        z-index: -1;
+    }
+    #time{
+        z-index: -1;
+    }
+    .footer{
+        z-index: -1;
+    }
+}
+
+@media(max-width: 862px){
+    .navbar .mainMenu li a{
+        font-size: 1.2rem;
+    }
+    #name{
+        font-size: 2.2rem;
+    }
+    #quote{
+        font-size: 1.6rem;
+    }
+    #time{
+        font-size: 1.3rem;
+    }
+    .insideForm{
+        font-size: 1.1rem;
+    }
+    .insideForm input{
+        font-size: 1rem;
+    }
+    .txtarea textarea{
+        font-size: 1rem;
+    }
+    #gender option{
+        font-size: 1.1rem;
+    }
+    button{
+        font-size: 0.8rem;
+    }
+    .footer{
+        font-size: 1.1rem;
+    }
+    .icon i {
+        font-size: 1.4rem;
+    } 
+}
+
+@media(max-width: 660px) {
+    #name{
+        font-size: 2rem;
+    }
+    #quote{
+        font-size: 1.4rem;
+    }
+    #time{
+        font-size: 1.2rem;
+    }
+    .navbar .mainMenu li a{
+        font-size: 1rem;
+    }
+    .navbar .openMenu {
+        font-size: 1.5rem;
+    }
+    .insideForm{
+        font-size: 1rem;
+    }
+    .insideForm input{
+        font-size: 0.9rem;
+    }
+    .txtarea textarea{
+        font-size: 0.9rem;
+    }
+    #gender option{
+        font-size: 1rem;
+    }
+    button{
+        font-size: 0.7rem;
+    }
+    .footer{
+        font-size: 1rem;
+    }
+    .icon i {
+        font-size: 1.3rem;
+    } 
+}
+
+@media(max-width: 595px){
+    #name{
+        font-size: 1.7rem;
+    }
+    #time{
+        font-size: 1.1rem;
+    }
+}
+
+@media(max-width: 500px){
+    #name{
+        font-size: 1.4rem;
+    }
+    #quote{
+        font-size: 1rem;
+    }
+    #time{
+        font-size: 1rem;
+    }
+    .navbar .logo img{
+        height: 3rem;
+        width: 3rem;
+    }
+    #quote{
+        font-size:1.4rem;
+    }
+    .insideForm{
+        font-size: 0.9rem;
+    }
+    .insideForm input{
+        font-size: 0.8rem;
+    }
+    .txtarea textarea{
+        font-size: 0.8rem;
+    }
+    #gender option{
+        font-size: 0.9rem;
+    }
+    button{
+        font-size: 0.6rem;
+    }
+    .footer{
+        font-size: 0.9rem;
+    }
+    .icon i {
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width: 438px){
+    #time{
+        font-size: 0.95rem;
+    }
+}
+
+@media(max-width: 423px){
+    #name{
+        font-size: 1.1rem;
+    }
+    #time{
+        font-size: 0.9rem;
+    }
+    .navbar .openMenu {
+        font-size: 1.4rem;
+    }
+
+    .insideForm{
+        font-size: 0.8rem;
+    }
+    .insideForm input{
+        font-size: 0.7rem;
+    }
+    .txtarea textarea{
+        font-size: 0.7rem;
+    }
+    .footer{
+        font-size: 0.8rem;
+    }
+    .icon i {
+        font-size: 1.1rem;
+    }
+    
+}
+@media(max-width: 395px){
+    #time{
+        font-size: 0.85rem;
+    }
+    #gender option{
+        font-size: 0.85rem;
+    }
+    button{
+        font-size: 0.55rem;
+    }
+}
+@media(max-width: 383px){
+    #name{
+        font-size: 0.9rem;
+    }
+    #time{
+        font-size: 0.8rem;
+    }
+    .navbar .openMenu {
+        font-size: 1rem;
+    }
+    .navbar .openMenu {
+        top: 1.5rem;
+        right: 1.1rem;
+    }
+    .insideForm{
+        font-size: 0.7rem;
+    }
+    .insideForm input{
+        font-size: 0.6rem;
+    }
+    .txtarea textarea{
+        font-size: 0.6rem;
+    }
+    #gender option{
+        font-size: 0.8rem;
+    }
+    button{
+        font-size: 0.5rem;
+    }
+    .footer{
+        font-size: 0.7rem;
+    }
+    .icon i {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 358px){
+    #name{
+        font-size: 0.8rem;
+    }
+    #time{
+        font-size: 0.75rem;
+    }
+    .navbar .openMenu {
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width: 350px){
+    #time{
+        font-size: 0.7rem;
+    }
+}

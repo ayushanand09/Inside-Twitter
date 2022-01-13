@@ -1,0 +1,550 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(19 69 108);
+    height: 100vh;
+}
+
+.navbar{
+    background-color: black;
+    opacity: 0.8;
+    margin: 1rem;
+    border-radius: 1rem;
+    justify-content: space-between;
+    display: flex;
+}
+
+.navbar .logo img{
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    vertical-align: middle;
+}
+
+.navbar:hover{
+    transition: all 1s;
+    box-shadow: 0.8rem 0.8rem 0.5rem rgb(3, 19, 56);
+}
+
+#name{
+    display: inline-block;
+    color: white;
+    font-size: 2.5rem;
+    margin: 1rem 5rem;
+}
+
+.navbar .mainMenu{
+    list-style: none;
+    display: flex;
+    color: #fff;
+    margin: 1rem 2rem;
+}
+
+.navbar .mainMenu li a{
+    font-family: 'Noto Serif', serif;
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li a:hover{
+    font-size: 1.65rem;
+    background-color: white;
+    color:black;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+#home{
+    height: 3.5rem;
+}
+
+#home:hover{
+    background-color: white;
+    transition: 0.5s;
+}
+
+.navbar .openMenu {
+    font-size: 2rem;
+    margin: 1rem;
+    display: none;
+    cursor: pointer;
+}
+
+.navbar .mainMenu .closeMenu,
+.icons i{
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#time{
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: antiquewhite;
+    font-size: 1.4rem;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 1rem;
+}
+
+.welcomePage{
+    position: relative;
+    min-height: 100vh;
+    background: url('https://akm-img-a-in.tosshub.com/indiatoday/images/story/202104/alexander-shatov-k1xf2D7jWUs-u_1200x768.jpeg?ZIQ.TPnM3qZ5j2nRxZ80YhdcjSxBMHAE&size=770:433');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+#welcome{
+    font-family: 'Signika Negative', sans-serif;
+    overflow: hidden;
+    white-space:normal;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    color: blanchedalmond;
+}
+
+.gif-1{
+    display: flex;
+    float: right;
+    margin: 1rem 2rem;
+    position: sticky;
+    top: 1rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+.insideWelcome-1{
+    font-family: 'Prata', serif;
+    display: inline-block;
+    margin: 1.4rem;
+    padding: 0.3rem;
+    color: blanchedalmond;
+    background-color: black;
+    opacity: 0.7;
+    font-size: 1.4rem;
+}
+
+.insideWelcome-1 h2{
+    display: flex;
+    justify-content: center;
+}
+
+.insideWelcome-1:hover{
+    transform: translateX(1rem);
+    transition: all 1s;
+    box-shadow: 0.2rem 0.1rem 0.1rem grey;
+}
+
+.insideWelcome-2{
+    font-family: 'Prata', serif;
+    display: inline-block;
+    margin: 1.4rem;
+    padding: 0.25rem;
+    color: blanchedalmond;
+    background-color: black;
+    opacity: 0.7;
+    font-size: 1.4rem;
+}
+
+.insideWelcome-2 h2{
+    display: flex;
+    justify-content: center;
+}
+
+.insideWelcome-2:hover{
+    transform: translateX(1rem);
+    transition: all 1s;
+    box-shadow: 0.2rem 0.1rem 0.1rem grey;
+}
+
+.map-page{
+    position: relative;
+    height: 100vh;
+    position: relative;
+    margin: 2rem;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 3rem;
+    font-size: 1.4rem;
+}
+
+.icon {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.3rem;
+}
+
+.icon i {
+    font-size: 1.7rem;
+    padding: 0rem 0.3rem;
+    border:1px solid rgb(65, 65, 65);
+    border-radius: 0.6rem;
+    color: white;
+    cursor: pointer;
+    margin: 0.1rem;
+}
+
+.icon i:hover {
+    border:0.1rem solid rgb(143, 142, 142);
+    transition: all 0.5s;
+    color: rgb(143, 142, 142);
+}
+
+.copyright{
+    display: flex;
+    color: turquoise;
+}
+
+@media(max-width: 1395px){
+    .welcomePage #welcome{
+        font-size: 1.6rem;
+    }
+    .navbar .mainMenu li a{
+        font-size: 1.4rem;
+    }
+    #name{
+        font-size: 2.4rem;
+    }
+    .footer{
+        font-size: 1.3rem;
+    }
+    .icon i {
+        font-size: 1.6rem;
+    }
+}
+
+@media(max-width: 1330px) and (min-width:1100px) {
+    .navbar .logo img{
+        height: 4rem;
+        width: 4rem;
+    }
+}
+
+@media(max-width: 1200px){
+    .navbar .mainMenu li a{
+        font-size: 1.3rem;
+    }
+    #name{
+        font-size: 2.3rem;
+    }
+    #time{
+        font-size: 1.4rem;
+    }
+    .footer{
+        font-size: 1.2rem;
+    }
+    .icon i {
+        font-size: 1.5rem;
+    } 
+}
+
+@media(max-width: 1128px){
+    .welcomePage #welcome{
+        font-size: 1.4rem;
+    }
+}
+
+@media(max-width: 1100px) {
+    .navbar .mainMenu {
+        min-height: 100vh;
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin-top:0rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: black;
+        transition: all 1s ease;
+    }
+
+    .navbar .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 1.1rem;
+        right: 1.1rem;
+    }
+
+    .navbar .openMenu {
+        color: white;
+        display:inline-block;
+        position: absolute;
+        top: 2rem;
+        right: 1.1rem;
+    }
+
+    .navbar .mainMenu li a:hover {
+        background: none;
+        color: rgb(255, 123, 0);
+        font-size: 1.6rem;
+    }
+
+    .welcomePage #welcome{
+        font-size: 1.4rem;
+    }
+    .welcomePage{
+        z-index: -1;
+    }
+
+    #time{
+        z-index: -1;
+    }
+
+    .map-page{
+        z-index: -1;
+    }
+
+    .footer{
+        z-index: -1;
+    }
+
+    
+}
+
+@media(max-width: 994px){
+    .welcomePage #welcome{
+        font-size: 1.2rem;
+    }
+    #time{
+        font-size: 1.3rem;
+    }
+    .insideWelcome-1 h2{
+        font-size: 1.4rem;
+    }
+    .insideWelcome-1 span{
+        font-size: 0.9rem;
+    }
+    .insideWelcome-2 h2{
+        font-size: 1.4rem;
+    }
+    .insideWelcome-2 span{
+        font-size: 0.9rem;
+    }
+    .footer{
+        font-size: 1.1rem;
+    }
+    .icon i {
+        font-size: 1.4rem;
+    } 
+}
+
+@media(max-width: 862px){
+    .welcomePage #welcome{
+        font-size: 0.9rem;
+    }
+    .navbar .mainMenu li a{
+        font-size: 1.2rem;
+    }
+    #name{
+        font-size: 2.2rem;
+    }
+}
+
+@media(max-width: 660px) {
+    #name{
+        font-size: 2rem;
+    }
+
+    #time{
+        font-size: 1.2rem;
+    }
+
+    #welcome{
+        font-size: 1rem;
+    }
+    .navbar .logo img{
+        height: 3rem;
+        width: 3rem;
+    }
+    .insideWelcome-1 h2{
+        font-size: 1.3rem;
+    }
+    .insideWelcome-1 span{
+        font-size: 0.8rem;
+    }
+    .insideWelcome-2 h2{
+        font-size: 1.3rem;
+    }
+    .insideWelcome-2 span{
+        font-size: 0.8rem;
+    }
+
+    .navbar .mainMenu li a{
+        font-size: 1rem;
+    }
+    .navbar .openMenu {
+        font-size: 1.5rem;
+    }
+    .footer{
+        font-size: 1rem;
+    }
+    .icon i {
+        font-size: 1.3rem;
+    }
+}
+
+@media(max-width: 595px){
+    #name{
+        font-size: 1.8rem;
+    }
+    #time{
+        font-size: 1.1rem;
+    }
+}
+
+@media(max-width: 500px){
+    #name{
+        font-size: 1.4rem;
+    }
+    #time{
+        font-size: 1rem;
+    }
+    .navbar .logo img{
+        height: 3rem;
+        width: 3rem;
+    }
+    .insideWelcome-1 h2{
+        font-size: 1.2rem;
+    }
+    .insideWelcome-1 span{
+        font-size: 0.7rem;
+    }
+    .insideWelcome-2 h2{
+        font-size: 1.2rem;
+    }
+    .insideWelcome-2 span{
+        font-size: 0.7rem;
+    }
+    .footer{
+        font-size: 0.9rem;
+    }
+    .icon i {
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width: 438px){
+    #time{
+        font-size: 0.95rem;
+    }
+}
+
+@media(max-width: 423px){
+    #name{
+        font-size: 1.1rem;
+    }
+
+    #time{
+        font-size: 0.9rem;
+    }
+
+    .navbar .openMenu {
+        font-size: 1.4rem;
+    }
+    .insideWelcome-1 h2{
+        font-size: 1.1rem;
+    }
+    .insideWelcome-1 span{
+        font-size: 0.6rem;
+    }
+    .insideWelcome-2 h2{
+        font-size: 1.1rem;
+    }
+    .insideWelcome-2 span{
+        font-size: 0.6rem;
+    }
+    .footer{
+        font-size: 0.8rem;
+    }
+    .icon i {
+        font-size: 1.1rem;
+    }
+}
+
+@media(max-width: 395px){
+    #time{
+        font-size: 0.85rem;
+    }
+}
+
+@media(max-width: 383px){
+    #name{
+        font-size: 0.9rem;
+    }
+
+    .navbar .openMenu {
+        font-size: 1rem;
+    }
+    .navbar .logo img{
+        height: 2rem;
+        width: 2rem;
+    }
+    .navbar .openMenu {
+        top: 1.5rem;
+        right: 1.1rem;
+    }
+    .insideWelcome-1 h2{
+        font-size: 1rem;
+    }
+    .insideWelcome-1 span{
+        font-size: 0.5rem;
+    }
+    .insideWelcome-2 h2{
+        font-size: 1rem;
+    }
+    .insideWelcome-2 span{
+        font-size: 0.5rem;
+    }
+    .footer{
+        font-size: 0.7rem;
+    }
+    .icon i {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 358px){
+    #name{
+        font-size: 0.8rem;
+    }
+    .navbar .openMenu {
+        font-size: 0.8rem;
+    }
+    #time{
+        font-size: 0.75rem;
+    }
+}
+
+@media(max-width: 350px){
+    #time{
+        font-size: 0.7rem;
+    }
+}
+
